@@ -52,6 +52,7 @@ group :development, :test do
   gem 'byebug'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+  gem 'ffaker'
   gem 'rubocop'
   gem 'rubocop-performance'
   gem 'rubocop-rails'

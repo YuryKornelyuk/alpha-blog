@@ -1,1 +1,1 @@
-Thisi is Udemy The Complete Ruby on Rails Developer Course
+This is Udemy The Complete Ruby on Rails Developer Course
