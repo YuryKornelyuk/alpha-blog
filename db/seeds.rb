@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+# Create a 20 random Articles
+20.times do
+  Article.create(
+    title: FFaker::Book.title,
+    description: FFaker::CheesyLingo.paragraph
+  )
+end
