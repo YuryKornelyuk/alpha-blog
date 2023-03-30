@@ -2,16 +2,7 @@
 
   <%= form_with model: @article, class: 'shadow mb-3 bg-info rounded p-3' do |form| %>
 
-    <% if @article.errors.any? %>
-      <div style="color: red" class="text-center">
-        <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
-        <ul>
-          <% @article.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <% end %>
-        </ul>
-      </div>
-    <% end %>
+    <%= render 'shared/errors' %>
 
     <div class="row mt-4">
       <%= form.label :title, style: "display: block", class: 'col-2 col-form-label text-light' %>
