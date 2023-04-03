@@ -2,7 +2,7 @@
 
   <%= form_with model: @article, class: 'shadow mb-3 bg-info rounded p-3' do |form| %>
 
-    <%= render 'shared/errors' %>
+    <%= render 'shared/errors', obj: @article %>
 
     <div class="row mt-4">
       <%= form.label :title, style: "display: block", class: 'col-2 col-form-label text-light' %>
